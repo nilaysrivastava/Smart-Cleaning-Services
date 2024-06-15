@@ -1,6 +1,6 @@
 .fortune-text {
-    font-size: 24px;
-    padding-top: 30px;
+    font-size: 1.5rem;
+    padding-top: 2rem;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
@@ -36,15 +36,35 @@
       transform: translateY(0);
     }
   }
+  
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1.5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .swipe-icon {
+    animation: moveDown 2s ease-in-out infinite;
+  }
+  
 
-@keyframes moveDown {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(1.5rem); }
-  100% { transform: translateY(0); }
-}
-
-.swipe-icon {
-  animation: moveDown 2s ease-in-out infinite;
-}
-
+  @media (min-width: 768px) {
+    .fortune-text {
+      font-size: 1.75rem;
+      padding-top: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .fortune-text {
+      font-size: 2rem;
+      padding-top: 3rem;
+    }
+  }
   

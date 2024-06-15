@@ -15,7 +15,7 @@ const Landing: React.FC = () => {
   return (
     <div>
       {/* Why Choose Us Section */}
-      <div className="why-choose-section py-12">
+      <div className="why-choose-section py-12 p-4">
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-between">
             <div className="w-full lg:w-1/2">
@@ -82,8 +82,8 @@ const Landing: React.FC = () => {
       </div>
 
       {/* We Help Section */}
-      <div className="we-help-section py-12 bg-[#fae1dd]">
-        <div className="container mx-auto">
+      <div className="we-help-section py-12 bg-[#fae1dd] p-4">
+        <div className="container mx-auto p-4">
           <div className="flex flex-wrap justify-between">
             <div className="w-full lg:w-7/12 mb-5 lg:mb-0">
               <div className="imgs-grid">

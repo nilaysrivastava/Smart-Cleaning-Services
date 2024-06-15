@@ -164,7 +164,7 @@ const FormPage: React.FC = () => {
                 type="submit"
                 className="w-full bg-[#023047] text-white py-2 rounded-md"
               >
-                Submit
+                Book Now!
               </button>
             </form>
           </div>
