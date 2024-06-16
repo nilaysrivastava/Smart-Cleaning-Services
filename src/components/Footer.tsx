@@ -11,9 +11,38 @@ import { MdEmail } from "react-icons/md";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#023047] text-white py-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 justify-center">
-        <div className="pl-4 md:pl-10 flex justify-center">
-          <div className="max-w-xs">
+      <div className="container mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-10 text-left">
+        <div className="flex">
+          <div className="max-w-xs px-4 md:px-0">
+            <h3 className="text-lg font-semibold mb-2">Company</h3>
+            <ul className="text-sm space-y-2">
+              <li>
+                <button onClick={() => (window.location.href = "/home")}>
+                  Home
+                </button>
+              </li>
+              <li>
+                <button onClick={() => (window.location.href = "/about")}>
+                  About Us
+                </button>
+              </li>
+              <li>
+                <button onClick={() => (window.location.href = "/contact")}>
+                  Contact
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => (window.location.href = "/service-partner")}
+                >
+                  Service Partner
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="flex">
+          <div className="max-w-xs px-4 md:px-0">
             <h3 className="text-lg font-semibold mb-2">About Company</h3>
             <p className="text-sm">
               Smart Cleaning Services, the leading home cleaning market network,
@@ -43,38 +72,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pl-4 md:pl-10 flex justify-center">
-          <div className="max-w-xs">
-            <h3 className="text-lg font-semibold mb-2">Company</h3>
-            <ul className="text-sm space-y-2">
-              <li>
-                <button onClick={() => (window.location.href = "/home")}>
-                  Home
-                </button>
-              </li>
-              <li>
-                <button onClick={() => (window.location.href = "/about")}>
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button onClick={() => (window.location.href = "/contact")}>
-                  Contact
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => (window.location.href = "/service-partner")}
-                >
-                  Service Partner
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="pl-4 md:pl-10 flex justify-center">
-          <div className="max-w-xs">
+        <div className="flex">
+          <div className="max-w-xs px-4 md:px-0">
             <h3 className="text-lg font-semibold mb-2">Our Services</h3>
             <ul className="text-sm space-y-2">
               <li>
@@ -151,8 +150,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pl-4 md:pl-10 flex justify-center">
-          <div className="max-w-xs">
+        <div className="flex">
+          <div className="max-w-xs px-4 md:px-0">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex flex-row space-x-6 mt-2 md:mt-8 text-3xl">
               <a href="#" className="text-white">
