@@ -27,13 +27,10 @@ const ServicePartner: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center py-8 bg-[#f8edeb]">
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex flex-col lg:flex-row rounded-lg p-8">
-          <div
-            className="rounded-lg shadow-lg mx-2 p-6 bg-white"
-            style={{ width: "40rem" }}
-          >
+    <div className="flex justify-center py-8 bg-[#f8edeb] px-4 lg:px-0">
+      <div className="flex flex-col lg:flex-row w-full max-w-6xl">
+        <div className="flex flex-col lg:flex-row rounded-lg p-8 w-full">
+          <div className="rounded-lg shadow-lg mx-2 p-6 bg-white w-full lg:w-[40rem]">
             <h1 className="text-3xl font-bold mb-8">
               Become A Service Partner
             </h1>
@@ -228,11 +225,8 @@ const ServicePartner: React.FC = () => {
             </form>
           </div>
         </div>
-        <div className="w-full lg:w-1/3 mt-8 lg:mt-0 lg:pl-8 p-8 pt-20">
-          <div
-            className="bg-[#023047] p-4 pb-6 rounded-lg w-full"
-            style={{ width: "20rem" }}
-          >
+        <div className="w-full lg:w-1/3 mt-8 lg:mt-0 lg:pl-8 p-8 pt-20 flex justify-center lg:justify-start">
+          <div className="bg-[#023047] p-4 pb-6 rounded-lg w-full lg:w-[20rem]">
             <h2 className="text-2xl font-bold mb-4 text-white">
               Send Your Message
             </h2>
@@ -241,10 +235,10 @@ const ServicePartner: React.FC = () => {
               using the form below. We'd love to hear your thoughts & answer any
               questions you may have!
             </p>
-            <p className="text-gray-200 mb-4 ">
+            <p className="text-gray-200 mb-4">
               <strong>Location:</strong> 615 /702 Vrindavan Yojna Lucknow
             </p>
-            <p className="text-gray-200 mb-4 ">
+            <p className="text-gray-200 mb-4">
               <strong>Phone:</strong>{" "}
               <a
                 href="tel:+917459917582"
@@ -254,7 +248,7 @@ const ServicePartner: React.FC = () => {
                 <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-[#8ecae6] transition-all duration-150 group-hover:w-full group-hover:left-0"></span>
               </a>
             </p>
-            <p className="text-gray-200 mb-4 ">
+            <p className="text-gray-200 mb-4">
               <strong>Email:</strong>{" "}
               <a href="mailto:email" className="text-[#8ecae6] group relative">
                 Email

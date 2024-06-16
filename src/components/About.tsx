@@ -1,5 +1,3 @@
-// src/components/About.tsx
-
 import React from "react";
 import Slider from "react-slick";
 import {
@@ -23,6 +21,24 @@ const About: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -61,11 +77,11 @@ const About: React.FC = () => {
             </p>
           </p>
         </div>
-        <div className="flex justify-center mb-8 h-96 rounded-lg">
-          <img src={a1} alt="" className="w-1/2 h-auto mx-2 rounded-lg" />
-          <img src={a2} alt="" className="w-1/2 h-auto mx-2 rounded-lg" />
+        <div className="flex flex-col md:flex-row justify-center mb-8 space-y-4 md:space-y-0 md:space-x-4 h-auto rounded-lg">
+          <img src={a1} alt="" className="w-full md:w-1/2 h-auto rounded-lg" />
+          <img src={a2} alt="" className="w-full md:w-1/2 h-auto rounded-lg" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-white p-6 rounded-lg shadow-md flex items-start">
             <div className="mr-4 text-[#023047]">
               <FaCheckCircle className="text-3xl" />
@@ -177,7 +193,6 @@ const About: React.FC = () => {
                   COO, Co-Founder, DEF Inc.
                 </p>
               </div>
-              {/* Add more testimonials as needed */}
             </Slider>
           </div>
         </div>
