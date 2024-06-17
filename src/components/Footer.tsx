@@ -12,42 +12,17 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#023047] text-white py-8">
       <div className="container mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-10 text-left">
-        <div className="flex">
-          <div className="max-w-xs px-4 md:px-0">
-            <h3 className="text-lg font-semibold mb-2">Company</h3>
-            <ul className="text-sm space-y-2">
-              <li>
-                <button onClick={() => (window.location.href = "/home")}>
-                  Home
-                </button>
-              </li>
-              <li>
-                <button onClick={() => (window.location.href = "/about")}>
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button onClick={() => (window.location.href = "/contact")}>
-                  Contact
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => (window.location.href = "/service-partner")}
-                >
-                  Service Partner
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex">
+        <div className="flex pl-10">
           <div className="max-w-xs px-4 md:px-0">
             <h3 className="text-lg font-semibold mb-2">About Company</h3>
             <p className="text-sm">
-              Smart Cleaning Services, the leading home cleaning market network,
-              connects homeowners with quality home improvement, cleaning
-              professionals to take care of all your home cleaning needs.
+              Smart Cleaning Services, <br /> the leading home cleaning
+              <br />
+              market network, connects <br /> homeowners with quality <br />
+              home improvement, cleaning
+              <br /> professionals to take care
+              <br /> of all your home cleaning
+              <br /> needs.
             </p>
             <div className="mt-4">
               <div className="flex items-center mb-2 py-1">
@@ -72,7 +47,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex pl-10">
           <div className="max-w-xs px-4 md:px-0">
             <h3 className="text-lg font-semibold mb-2">Our Services</h3>
             <ul className="text-sm space-y-2">
@@ -149,8 +124,37 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
+        <div className="flex pl-10">
+          <div className="max-w-xs px-4 md:px-0">
+            <h3 className="text-lg font-semibold mb-2">Company</h3>
+            <ul className="text-sm space-y-2">
+              <li>
+                <button onClick={() => (window.location.href = "/home")}>
+                  Home
+                </button>
+              </li>
+              <li>
+                <button onClick={() => (window.location.href = "/about")}>
+                  About Us
+                </button>
+              </li>
+              <li>
+                <button onClick={() => (window.location.href = "/contact")}>
+                  Contact
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => (window.location.href = "/service-partner")}
+                >
+                  Service Partner
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <div className="flex">
+        <div className="flex pl-10">
           <div className="max-w-xs px-4 md:px-0">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex flex-row space-x-6 mt-2 md:mt-8 text-3xl">
